@@ -1,0 +1,141 @@
+/* ===== TESTIMONIALS ===== */
+#testimonials {
+  background: var(--white);
+  overflow-x: hidden;
+  padding: 120px 5%;
+}
+
+.testimonials-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-scroll {
+  display: flex;
+  gap: 1.8rem;
+  width: max-content;
+  animation: scrollLoop 28s linear infinite;
+  will-change: transform;
+  padding: 20px 0;
+}
+
+.testimonials-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLoop {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.testimonials-wrapper::before,
+.testimonials-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.testimonials-wrapper::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--white), transparent);
+}
+
+.testimonials-wrapper::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--white), transparent);
+}
+
+.testi-card {
+  width: 360px;
+  flex-shrink: 0;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 2rem;
+  transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+}
+
+.testi-card:hover {
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-mid);
+}
+
+.testi-quote {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem;
+  color: var(--accent);
+  line-height: 0.7;
+  margin-bottom: 1rem;
+  display: block;
+  opacity: 0.3;
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 0.9rem;
+  margin-bottom: 0.85rem;
+}
+
+.testi-text {
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testi-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.av1 { background: linear-gradient(135deg, #2563eb, #7c3aed); }
+.av2 { background: linear-gradient(135deg, #d4a853, #ea580c); }
+.av3 { background: linear-gradient(135deg, #16a34a, #0891b2); }
+.av4 { background: linear-gradient(135deg, #9333ea, #c084fc); }
+.av5 { background: linear-gradient(135deg, #dc2626, #f87171); }
+.av6 { background: linear-gradient(135deg, #0891b2, #22d3ee); }
+
+.testi-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.testi-role {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin-top: 0.1rem;
+}
+
+.testimonial-hint {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}

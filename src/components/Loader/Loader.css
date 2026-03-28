@@ -1,0 +1,53 @@
+/* ===== LOADER ===== */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-inner {
+  text-align: center;
+}
+
+.loader-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+}
+
+.loader-logo span {
+  color: var(--accent);
+}
+
+.loader-bar {
+  width: 120px;
+  height: 3px;
+  background: var(--border);
+  border-radius: 10px;
+  margin: 1rem auto 0;
+  overflow: hidden;
+}
+
+.loader-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 10px;
+  animation: loadfill 1.2s ease forwards;
+}
+
+@keyframes loadfill {
+  from { width: 0; }
+  to { width: 100%; }
+}

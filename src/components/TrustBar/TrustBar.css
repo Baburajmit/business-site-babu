@@ -1,0 +1,69 @@
+/* ===== TRUST BAR ===== */
+.trust-bar {
+  padding: 40px 5%;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+.trust-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+.trust-item:hover {
+  background: var(--cream);
+}
+
+.trust-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.trust-icon.blue   { background: var(--accent-soft); }
+.trust-icon.gold   { background: var(--gold-soft); }
+.trust-icon.green  { background: var(--green-soft); }
+.trust-icon.purple { background: #f5f3ff; }
+
+.trust-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.trust-sub {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .trust-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .trust-inner {
+    grid-template-columns: 1fr;
+  }
+}

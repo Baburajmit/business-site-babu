@@ -1,0 +1,361 @@
+#hero {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1280 720%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%221280%22 height=%22720%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h1280v720H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23fff%22 d=%22M0 0h1280v720H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23ddddddd4%22 stroke-width=%22.384%22 fill=%22none%22 mask=%22url(%23b)%22%3E%3Cpath d=%22M0 0h58.182v58.182H0zM58.182 0h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 0h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 0h58.182v58.182h-58.182zM232.727 0h58.182v58.182h-58.182zM290.909 0h58.182v58.182h-58.182zM349.091 0h58.182v58.182h-58.182zM407.273 0h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 0h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 0h58.182v58.182h-58.182zM581.818 0H640v58.182h-58.182zM640 0h58.182v58.182H640zM698.182 0h58.182v58.182h-58.182zM756.364 0h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 0h58.182v58.182h-58.182zM872.727 0h58.182v58.182h-58.182zM930.909 0h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 0h58.182v58.182h-58.182zM1047.273 0h58.182v58.182h-58.182zM1105.455 0h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 0h58.182v58.182h-58.182zM1221.818 0H1280v58.182h-58.182zM0 58.182h58.182v58.182H0zM58.182 58.182h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 58.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 58.182h58.182v58.182h-58.182zM232.727 58.182h58.182v58.182h-58.182zM290.909 58.182h58.182v58.182h-58.182zM349.091 58.182h58.182v58.182h-58.182zM407.273 58.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 58.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 58.182h58.182v58.182h-58.182zM581.818 58.182H640v58.182h-58.182zM640 58.182h58.182v58.182H640zM698.182 58.182h58.182v58.182h-58.182zM756.364 58.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 58.182h58.182v58.182h-58.182zM872.727 58.182h58.182v58.182h-58.182zM930.909 58.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 58.182h58.182v58.182h-58.182zM1047.273 58.182h58.182v58.182h-58.182zM1105.455 58.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 58.182h58.182v58.182h-58.182zM1221.818 58.182H1280v58.182h-58.182zM0 116.364h58.182v58.182H0zM58.182 116.364h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 116.364h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 116.364h58.182v58.182h-58.182zM232.727 116.364h58.182v58.182h-58.182zM290.909 116.364h58.182v58.182h-58.182zM349.091 116.364h58.182v58.182h-58.182zM407.273 116.364h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 116.364h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 116.364h58.182v58.182h-58.182zM581.818 116.364H640v58.182h-58.182zM640 116.364h58.182v58.182H640zM698.182 116.364h58.182v58.182h-58.182zM756.364 116.364h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 116.364h58.182v58.182h-58.182zM872.727 116.364h58.182v58.182h-58.182zM930.909 116.364h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 116.364h58.182v58.182h-58.182zM1047.273 116.364h58.182v58.182h-58.182zM1105.455 116.364h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 116.364h58.182v58.182h-58.182zM1221.818 116.364H1280v58.182h-58.182zM0 174.545h58.182v58.182H0zM58.182 174.545h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 174.545h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 174.545h58.182v58.182h-58.182zM232.727 174.545h58.182v58.182h-58.182zM290.909 174.545h58.182v58.182h-58.182zM349.091 174.545h58.182v58.182h-58.182zM407.273 174.545h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 174.545h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 174.545h58.182v58.182h-58.182zM581.818 174.545H640v58.182h-58.182zM640 174.545h58.182v58.182H640zM698.182 174.545h58.182v58.182h-58.182zM756.364 174.545h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 174.545h58.182v58.182h-58.182zM872.727 174.545h58.182v58.182h-58.182zM930.909 174.545h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 174.545h58.182v58.182h-58.182zM1047.273 174.545h58.182v58.182h-58.182zM1105.455 174.545h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 174.545h58.182v58.182h-58.182zM1221.818 174.545H1280v58.182h-58.182zM0 232.727h58.182v58.182H0zM58.182 232.727h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 232.727h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 232.727h58.182v58.182h-58.182zM232.727 232.727h58.182v58.182h-58.182zM290.909 232.727h58.182v58.182h-58.182zM349.091 232.727h58.182v58.182h-58.182zM407.273 232.727h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 232.727h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 232.727h58.182v58.182h-58.182zM581.818 232.727H640v58.182h-58.182zM640 232.727h58.182v58.182H640zM698.182 232.727h58.182v58.182h-58.182zM756.364 232.727h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 232.727h58.182v58.182h-58.182zM872.727 232.727h58.182v58.182h-58.182zM930.909 232.727h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 232.727h58.182v58.182h-58.182zM1047.273 232.727h58.182v58.182h-58.182zM1105.455 232.727h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 232.727h58.182v58.182h-58.182zM1221.818 232.727H1280v58.182h-58.182zM0 290.909h58.182v58.182H0zM58.182 290.909h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 290.909h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 290.909h58.182v58.182h-58.182zM232.727 290.909h58.182v58.182h-58.182zM290.909 290.909h58.182v58.182h-58.182zM349.091 290.909h58.182v58.182h-58.182zM407.273 290.909h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 290.909h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 290.909h58.182v58.182h-58.182zM581.818 290.909H640v58.182h-58.182zM640 290.909h58.182v58.182H640zM698.182 290.909h58.182v58.182h-58.182zM756.364 290.909h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 290.909h58.182v58.182h-58.182zM872.727 290.909h58.182v58.182h-58.182zM930.909 290.909h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 290.909h58.182v58.182h-58.182zM1047.273 290.909h58.182v58.182h-58.182zM1105.455 290.909h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 290.909h58.182v58.182h-58.182zM1221.818 290.909H1280v58.182h-58.182zM0 349.091h58.182v58.182H0zM58.182 349.091h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 349.091h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 349.091h58.182v58.182h-58.182zM232.727 349.091h58.182v58.182h-58.182zM290.909 349.091h58.182v58.182h-58.182zM349.091 349.091h58.182v58.182h-58.182zM407.273 349.091h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 349.091h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 349.091h58.182v58.182h-58.182zM581.818 349.091H640v58.182h-58.182zM640 349.091h58.182v58.182H640zM698.182 349.091h58.182v58.182h-58.182zM756.364 349.091h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 349.091h58.182v58.182h-58.182zM872.727 349.091h58.182v58.182h-58.182zM930.909 349.091h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 349.091h58.182v58.182h-58.182zM1047.273 349.091h58.182v58.182h-58.182zM1105.455 349.091h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 349.091h58.182v58.182h-58.182zM1221.818 349.091H1280v58.182h-58.182zM0 407.273h58.182v58.182H0zM58.182 407.273h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 407.273h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 407.273h58.182v58.182h-58.182zM232.727 407.273h58.182v58.182h-58.182zM290.909 407.273h58.182v58.182h-58.182zM349.091 407.273h58.182v58.182h-58.182zM407.273 407.273h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 407.273h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 407.273h58.182v58.182h-58.182zM581.818 407.273H640v58.182h-58.182zM640 407.273h58.182v58.182H640zM698.182 407.273h58.182v58.182h-58.182zM756.364 407.273h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 407.273h58.182v58.182h-58.182zM872.727 407.273h58.182v58.182h-58.182zM930.909 407.273h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 407.273h58.182v58.182h-58.182zM1047.273 407.273h58.182v58.182h-58.182zM1105.455 407.273h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 407.273h58.182v58.182h-58.182zM1221.818 407.273H1280v58.182h-58.182zM0 465.455h58.182v58.182H0zM58.182 465.455h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 465.455h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 465.455h58.182v58.182h-58.182zM232.727 465.455h58.182v58.182h-58.182zM290.909 465.455h58.182v58.182h-58.182zM349.091 465.455h58.182v58.182h-58.182zM407.273 465.455h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 465.455h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 465.455h58.182v58.182h-58.182zM581.818 465.455H640v58.182h-58.182zM640 465.455h58.182v58.182H640zM698.182 465.455h58.182v58.182h-58.182zM756.364 465.455h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 465.455h58.182v58.182h-58.182zM872.727 465.455h58.182v58.182h-58.182zM930.909 465.455h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 465.455h58.182v58.182h-58.182zM1047.273 465.455h58.182v58.182h-58.182zM1105.455 465.455h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 465.455h58.182v58.182h-58.182zM1221.818 465.455H1280v58.182h-58.182zM0 523.636h58.182v58.182H0zM58.182 523.636h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 523.636h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 523.636h58.182v58.182h-58.182zM232.727 523.636h58.182v58.182h-58.182zM290.909 523.636h58.182v58.182h-58.182zM349.091 523.636h58.182v58.182h-58.182zM407.273 523.636h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 523.636h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 523.636h58.182v58.182h-58.182zM581.818 523.636H640v58.182h-58.182zM640 523.636h58.182v58.182H640zM698.182 523.636h58.182v58.182h-58.182zM756.364 523.636h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 523.636h58.182v58.182h-58.182zM872.727 523.636h58.182v58.182h-58.182zM930.909 523.636h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 523.636h58.182v58.182h-58.182zM1047.273 523.636h58.182v58.182h-58.182zM1105.455 523.636h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 523.636h58.182v58.182h-58.182zM1221.818 523.636H1280v58.182h-58.182zM0 581.818h58.182V640H0zM58.182 581.818h58.182V640H58.182z%22%2F%3E%3Cpath d=%22M116.364 581.818h58.182V640h-58.182z%22%2F%3E%3Cpath d=%22M174.545 581.818h58.182V640h-58.182zM232.727 581.818h58.182V640h-58.182zM290.909 581.818h58.182V640h-58.182zM349.091 581.818h58.182V640h-58.182zM407.273 581.818h58.182V640h-58.182z%22%2F%3E%3Cpath d=%22M465.455 581.818h58.182V640h-58.182z%22%2F%3E%3Cpath d=%22M523.636 581.818h58.182V640h-58.182zM581.818 581.818H640V640h-58.182zM640 581.818h58.182V640H640zM698.182 581.818h58.182V640h-58.182zM756.364 581.818h58.182V640h-58.182z%22%2F%3E%3Cpath d=%22M814.545 581.818h58.182V640h-58.182zM872.727 581.818h58.182V640h-58.182zM930.909 581.818h58.182V640h-58.182z%22%2F%3E%3Cpath d=%22M989.091 581.818h58.182V640h-58.182zM1047.273 581.818h58.182V640h-58.182zM1105.455 581.818h58.182V640h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 581.818h58.182V640h-58.182zM1221.818 581.818H1280V640h-58.182zM0 640h58.182v58.182H0zM58.182 640h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 640h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 640h58.182v58.182h-58.182zM232.727 640h58.182v58.182h-58.182zM290.909 640h58.182v58.182h-58.182zM349.091 640h58.182v58.182h-58.182zM407.273 640h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 640h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 640h58.182v58.182h-58.182zM581.818 640H640v58.182h-58.182zM640 640h58.182v58.182H640zM698.182 640h58.182v58.182h-58.182zM756.364 640h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 640h58.182v58.182h-58.182zM872.727 640h58.182v58.182h-58.182zM930.909 640h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 640h58.182v58.182h-58.182zM1047.273 640h58.182v58.182h-58.182zM1105.455 640h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 640h58.182v58.182h-58.182zM1221.818 640H1280v58.182h-58.182zM0 698.182h58.182v58.182H0zM58.182 698.182h58.182v58.182H58.182z%22%2F%3E%3Cpath d=%22M116.364 698.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M174.545 698.182h58.182v58.182h-58.182zM232.727 698.182h58.182v58.182h-58.182zM290.909 698.182h58.182v58.182h-58.182zM349.091 698.182h58.182v58.182h-58.182zM407.273 698.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M465.455 698.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M523.636 698.182h58.182v58.182h-58.182zM581.818 698.182H640v58.182h-58.182zM640 698.182h58.182v58.182H640zM698.182 698.182h58.182v58.182h-58.182zM756.364 698.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M814.545 698.182h58.182v58.182h-58.182zM872.727 698.182h58.182v58.182h-58.182zM930.909 698.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M989.091 698.182h58.182v58.182h-58.182zM1047.273 698.182h58.182v58.182h-58.182zM1105.455 698.182h58.182v58.182h-58.182z%22%2F%3E%3Cpath d=%22M1163.636 698.182h58.182v58.182h-58.182zM1221.818 698.182H1280v58.182h-58.182z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom, black 60%, rgba(0, 0, 0, 0.5) 75%, transparent 100%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 420px);
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(212, 168, 83, 0.04) 0%, transparent 70%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 420px);
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Left */
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(238, 243, 254, 0.9);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--accent-mid);
+  backdrop-filter: blur(2px);
+}
+
+.hero-tag::before {
+  content: '●';
+  font-size: 0.5rem;
+}
+
+.hero-left-content h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.hero-left-content h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 540px;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.85rem 1.8rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(26, 26, 46, 0.2);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--ink);
+  padding: 0.85rem 1.8rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid var(--border);
+  transition: all 0.25s;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  background: white;
+}
+
+/* ================= PROFILE CARD (UPGRADED) ================= */
+
+.pro-card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(250, 248, 244, 0.9));
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 20px 40px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+}
+
+/* subtle gradient glow */
+.pro-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.15), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* hover effect */
+.pro-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 
+    0 25px 60px rgba(37, 99, 235, 0.15),
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.pro-card:hover::before {
+  opacity: 1;
+}
+
+/* ================= HEADER ================= */
+
+.pro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pro-header h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.pro-header p {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin-top: 0.2rem;
+}
+
+/* ================= STATUS BADGE ================= */
+
+.status-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #059669;
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #bbf7d0;
+  transition: transform 0.3s ease;
+}
+
+.pro-card:hover .status-badge {
+  transform: scale(1.05);
+}
+
+/* ================= TECH STACK ================= */
+
+.tech-stack {
+  margin: 1.6rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-stack span {
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  color: var(--ink-soft);
+  transition: all 0.25s ease;
+}
+
+.tech-stack span:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ================= DIVIDER ================= */
+
+.card-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+  margin: 1.5rem 0;
+}
+
+/* ================= STATS ================= */
+
+.card-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.card-stats h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+}
+
+.card-stats p {
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  margin-top: 0.25rem;
+}
+
+/* hover animation for stats */
+.card-stats div {
+  transition: transform 0.3s ease;
+}
+
+.pro-card:hover .card-stats div {
+  transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .card-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .pro-card {
+    padding: 1.5rem;
+  }
+
+  .pro-header h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr; /* stack */
+    gap: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .pro-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .hero-left-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-sub {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .card-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

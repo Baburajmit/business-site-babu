@@ -1,0 +1,125 @@
+/* ===== WHY ME ===== */
+#why {
+  background: var(--white);
+}
+
+.why-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.why-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  transition: all 0.3s;
+}
+
+.why-item:hover {
+  border-color: var(--accent-mid);
+  background: var(--accent-soft);
+  transform: translateX(4px);
+}
+
+.why-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.why-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.why-desc {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+/* Visual Box */
+.why-visual {
+  background: linear-gradient(135deg, var(--accent-soft), #f5f3ff);
+  border-radius: 24px;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  margin-top: 170px;
+}
+
+.why-big-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 5rem;
+  color: var(--accent);
+  line-height: 1;
+  margin-top: auto;
+}
+
+.why-big-label {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.why-mini-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.wmini {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.wmini-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+
+.wmini-label {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .why-visual {
+    margin-top: 0;
+  }
+}
